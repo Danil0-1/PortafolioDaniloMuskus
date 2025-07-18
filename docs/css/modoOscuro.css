@@ -1,7 +1,7 @@
 /* ===== Botón de cambio de tema ===== */
 .theme-toggle {
   position: absolute;
-  top: 1rem;
+  top: 3.5rem;
   right: 1rem;
   z-index: 1000;
 }
@@ -67,3 +67,15 @@ body.dark #darkModeToggle:hover {
   background-color: #1d4ed8;
 }
 
+body.dark .tech-section {
+  background-color: #1c1c1e;
+  color: #e4e4e7;
+}
+
+body.dark .tech-section .title {
+  color: #f4f4f5;
+}
+
+body.dark .tech-section .description {
+  color: #a1a1aa;
+}

@@ -6,18 +6,46 @@
   <title>Danilo Muskus Tarazona | Portafolio</title>
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="./docs/css/modoOscuro.css">
+  <link rel="stylesheet" href="./docs/css/barra.css">
+  <link rel="icon" type="image/gif" href="./docs/Img/discord_developer.png">
+  <script src="./docs/commponents/animacionTitulo.js" defer></script>
 </head>
 <body>
 
+<header class="navbar">
+  <nav class="navbar-links">
+    <a href="#projects">Proyectos Destacados</a>
+    <a href="#webdev">Web Developer</a>
+    <a href="#aboutme">About me</a>
+  </nav>
 <div class="theme-toggle">
   <button id="darkModeToggle">Modo oscuro</button>
 </div>
-
-<header class="hero">
-  <h1 class="fade-in-up delay-1">Danilo Muskus Tarazona</h1>
-  <p class="fade-in-up delay-2">Desarrollador Web Junior | HTML, CSS, JavaScript</p>
-  <a href="#projects" class="cta-button fade-in-up delay-3">Ver proyectos</a>
 </header>
+
+<section class="contenedor-titulo">
+  <p id="typing-title" class="titulo-rol"></p>
+</section>
+
+<main id="aboutme"></main>  
+<section class="presentacion">
+  <div class="presentacion-izquierda fade-in-up delay-2">
+    <h2 class="titulo-aboutme fade-in-up delay-3">About Me</h2>
+</main>    
+    <p class="descripcion fade-in-up delay-4">
+  Soy un desarrollador web full-stack colombiano de 17 años, apasionado por crear aplicaciones rápidas, funcionales y atractivas.<br><br>
+  Programar es más que una habilidad: es un camino de aprendizaje constante. Disfruto transformar ideas en proyectos reales con código limpio, explorar nuevas tecnologías y resolver desafíos técnicos.<br><br>
+  Fuera del desarrollo, me encanta el baloncesto y seguir aprendiendo. Pero mi verdadera pasión siempre será el desarrollo web.🤍
+</p>
+</div>
+
+  <div class="presentacion-derecha fade-in-up delay-5">
+    <h2 class="nombre">Danilo Muskus Tarazona</h2>
+    <img src="./docs/Img/danilo.png" alt="Foto de Danilo Muskus Tarazona" class="foto-perfil">
+  </div>
+</section>
+
+
 
 <main id="projects">
   <h2 class="fade-in-up delay-4">Proyectos destacados</h2>
@@ -25,8 +53,52 @@
   </div>
 </main>
 
+<main id="webdev">
+  <section class="tech-section">
+    <h2 class="title">Web Developer</h2>
+    <p class="description">
+      Desarrollo sitios web modernos, escalables y de alto rendimiento utilizando tecnologías de vanguardia como HTML, CSS, JavaScript, Git, PHP, MySQL, Python, Ubuntu, Docker y Postman.
+    </p>
+    <div class="tech-carousel">
+      <div class="tech-track" id="techTrack">
+        <img src="./docs/Img/html.jpg" alt="HTML">
+        <img src="./docs/Img/css.jpg" alt="CSS">
+        <img src="./docs/Img/js.jpg" alt="JavaScript">
+        <img src="./docs/Img/git.jpg" alt="Git">
+        <img src="./docs/Img/php.jpg" alt="PHP">
+        <img src="./docs/Img/mysql.jpg" alt="MySQL">
+        <img src="./docs/Img/python.jpg" alt="Python">
+        <img src="./docs/Img/ubuntu.jpg" alt="Ubuntu">
+        <img src="./docs/Img/docker.jpg" alt="Docker">
+        <img src="./docs/Img/Postman.jpg" alt="Postman">
+        <img src="./docs/Img/html.jpg" alt="HTML">
+        <img src="./docs/Img/css.jpg" alt="CSS">
+        <img src="./docs/Img/js.jpg" alt="JavaScript">
+        <img src="./docs/Img/git.jpg" alt="Git">
+        <img src="./docs/Img/php.jpg" alt="PHP">
+        <img src="./docs/Img/mysql.jpg" alt="MySQL">
+        <img src="./docs/Img/python.jpg" alt="Python">
+        <img src="./docs/Img/ubuntu.jpg" alt="Ubuntu">
+        <img src="./docs/Img/docker.jpg" alt="Docker">
+        <img src="./docs/Img/Postman.jpg" alt="Postman">
+        <img src="./docs/Img/html.jpg" alt="HTML">
+        <img src="./docs/Img/css.jpg" alt="CSS">
+        <img src="./docs/Img/js.jpg" alt="JavaScript">
+        <img src="./docs/Img/git.jpg" alt="Git">
+        <img src="./docs/Img/php.jpg" alt="PHP">
+        <img src="./docs/Img/mysql.jpg" alt="MySQL">
+        <img src="./docs/Img/python.jpg" alt="Python">
+        <img src="./docs/Img/ubuntu.jpg" alt="Ubuntu">
+        <img src="./docs/Img/docker.jpg" alt="Docker">
+        <img src="./docs/Img/Postman.jpg" alt="Postman">
+      </div>
+    </div>
+  </section>
+</main>
 
-  <script src="index.js"></script>
-  <script src="./docs/commponents/modoOscuro.js"></script>
+<script src="index.js"></script>
+<script src="./docs/commponents/modoOscuro.js"></script>
+<script src="./docs/commponents/techScroll.js"></script>
+<script src="./docs/commponents/efectoEscritura.js"></script>
 </body>
 </html>

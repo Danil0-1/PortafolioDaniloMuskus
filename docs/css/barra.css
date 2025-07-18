@@ -1,0 +1,47 @@
+/* ===== Estilos para la barra de navegación ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #6c63ff;
+}
+
+.theme-toggle {
+  position: static;
+}
+
+body.dark .navbar {
+  background-color: #2a2a2d;
+  border-bottom: 1px solid #3f3f46;
+}
+
+body.dark .navbar-links a {
+  color: #e4e4e7;
+}
+
+body.dark .navbar-links a:hover {
+  color: #60a5fa;
+}
