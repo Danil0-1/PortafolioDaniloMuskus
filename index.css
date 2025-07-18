@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+
+
+.fade-in-up.delay-2 {
+  color: #5f6caf;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9fb;
@@ -48,20 +60,43 @@ body {
 }
 .hero p {
   margin-top: 0.5rem;
-  color: #555;
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
+
+/* Botones con degradado bonito */
+button,
 .cta-button {
   margin-top: 1rem;
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: #4f46e5;
-  color: white;
-  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #1a1a2e;
+  font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s;
+  display: inline-block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(171, 103, 230, 0.4);
 }
+button:hover,
 .cta-button:hover {
-  background-color: #3730a3;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(251, 194, 235, 0.5);
+}
+
+/* Enlaces de tarjetas */
+.card a {
+  text-decoration: none;
+  color: #783d3d;
+  font-weight: bold;
+}
+.card a:hover {
+  color: #683131;
+  text-decoration: underline;
 }
 
 /* Projects section */
@@ -75,7 +110,7 @@ main h2 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -103,11 +138,6 @@ main h2 {
   margin: 0.5rem 0;
   color: #666;
 }
-.card a {
-  text-decoration: none;
-  color: #4f46e5;
-  font-weight: bold;
-}
 
 /* Footer */
 footer {
@@ -117,15 +147,45 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Animación entrada tarjetas */
 .card.animate-entry {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* Responsive */
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.card a:last-child {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #1a1a2e;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(171, 103, 230, 0.4);
+}
+
+.card a:last-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(251, 194, 235, 0.5);
+}
+
