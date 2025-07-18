@@ -15,7 +15,7 @@ const projects = [
     title: "Cocina",
     description: "Landing page responsive con animaciones y presentación de platos.",
     image: "docs/Img/maryann.jpg",
-    link: "https://danil0-1.github.io/Maryann-Food/Informacion.html"
+    link: ""
   },
   {
     title: "App de ecommerce de ropa",
