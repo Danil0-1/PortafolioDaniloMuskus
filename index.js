@@ -15,7 +15,7 @@ const projects = [
     title: "Cocina",
     description: "Landing page responsive con animaciones y presentación de platos.",
     image: "docs/Img/maryann.jpg",
-    link: ""
+    link: "a"
   },
   {
     title: "App de ecommerce de ropa",
