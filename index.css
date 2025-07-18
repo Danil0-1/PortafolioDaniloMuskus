@@ -419,3 +419,83 @@ body.dark .titulo-aboutme {
   width: fit-content;
   padding: 0 10px;
 }
+
+.connect-with-me {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.connect-with-me h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00aaff;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+  transform: scale(1.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.theme-toggle {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .theme-toggle {
+    align-self: flex-end;
+  }
+}
+
+.fade-in-up.delay-2 {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #00aaff; /* o el color de tu botón claro */
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .fade-in-up.delay-2 {
+    font-size: 1rem;
+  }
+}
