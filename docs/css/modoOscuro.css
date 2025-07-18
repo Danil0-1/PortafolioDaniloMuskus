@@ -1,6 +1,6 @@
 /* ===== Botón de cambio de tema ===== */
 .theme-toggle {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   z-index: 1000;
@@ -66,3 +66,4 @@ body.dark #darkModeToggle {
 body.dark #darkModeToggle:hover {
   background-color: #1d4ed8;
 }
+

@@ -4,12 +4,37 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #f9f9fb;
   color: #1a1a1a;
   line-height: 1.6;
+  overflow-x: hidden;
 }
+
+/* === Animaciones === */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.delay-1 { animation-delay: 0.2s; }
+.delay-2 { animation-delay: 0.4s; }
+.delay-3 { animation-delay: 0.6s; }
+.delay-4 { animation-delay: 0.8s; }
+.delay-5 { animation-delay: 1s; }
 
 /* Hero */
 .hero {
@@ -47,11 +72,14 @@ main h2 {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
+
+/* Cards */
 .card {
   background-color: white;
   padding: 1rem;
@@ -87,4 +115,17 @@ footer {
   padding: 2rem;
   color: #aaa;
   font-size: 0.9rem;
+}
+
+.card.animate-entry {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
