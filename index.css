@@ -423,12 +423,18 @@ body.dark .titulo-aboutme {
 .connect-with-me {
   text-align: center;
   padding: 2rem 1rem;
+
 }
 
 .connect-with-me h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #00aaff;
+  text-shadow: 0 0 6px rgba(147, 112, 219, 0.5);
+  border-right: 2px solid #9370DB;
+}
+
+body.dark .connect-with-me {
+  color: #a78bfa; 
 }
 
 .social-links {
@@ -499,3 +505,10 @@ body.dark .titulo-aboutme {
     font-size: 1rem;
   }
 }
+
+
+  @media (max-width: 600px) {
+    .titulo-rol {
+      font-size: 0.9rem;
+    }
+  }
